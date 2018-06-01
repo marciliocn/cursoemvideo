@@ -1,11 +1,12 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
 @font-face {
-	font-family: 'FonteLogo', sans-serif;
+	font-family: FonteLogo;
 	src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 
 body {
+	font-family: Arial, sans-serif;
 	background-color: #DDD;
 	color: rgba(0,0,0,0.8);
 }
@@ -23,6 +24,15 @@ p {
 	text-indent: 50px;
 }
 
+a {
+	color: #606060;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 header#cabecalho {
 	border-bottom: 1px #606060 solid;
 	height: 130px;
@@ -30,7 +40,7 @@ header#cabecalho {
 }
 
 header#cabecalho h1 {
-	font-family: 'FonteLogo', sans-serif;
+	font-family: FonteLogo, sans-serif;
 	font-size: 30pt;
 	color: #606060;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
@@ -39,7 +49,7 @@ header#cabecalho h1 {
 }
 
 header#cabecalho h2 {
-	font-family: 'Titillium Web', sans-serif;
+	font-family: Titillium Web, sans-serif;
 	font-size: 15pt;
 	color: #888;
 	padding: 0px;
@@ -141,10 +151,28 @@ article#noticia-principal h2 {
 	margin: 10px 0px;
 }
 
-aside#lateral {
-	display: block;
-	width: 250px;
-	float: right;
+header#cabecalho-artigo h1 {
+	font-family: FonteLogo, sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h2 {
+	font-size: 13pt;
+	color: #CECECE;
+	background-color: transparent;
+	margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+	font-size: 12pt;
+	color: #606060;
+}
+
+.direita {
+	text-align: right;
 }
 
 table#tabelaspec {
@@ -185,6 +213,33 @@ table#tabelaspec td.cd {
 	background-color: #cecece;
 	text-align: left;
 }
+
+/* Formatação do Conteúdo Lateral - Início */
+aside#lateral {
+	display: block;
+	width: 240px;
+	float: right;
+	background-color: #DDD;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1 {
+	font-family: FonteLogo, sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+}
+
+aside#lateral h2 {
+	background-color: #606060;
+	font-size: 13pt;
+	color: #FFF;
+	padding: 5px;
+}
+/* Formatação do Conteúdo Lateral - Fim */
+
 footer#rodape {
 	clear: both;
 	border-top: 1px solid #606060;
